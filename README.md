@@ -10,7 +10,7 @@
 
 1. git clone https://github.com/claudioniz/linux-projeto-final.git
 2. Entre na pasta __linux-projeto-final/docker__ através do comando: __cd linux-projeto-final/docker__
-3. Execute o comando: __docker-compose -f ./projeto-final.yml up -d__
+3. Execute o comando: __docker-compose -f ./projeto-final.yml up__
 
 Deverão ser exibidos os containers __wep-app__ e __database-mysql__ 
 
