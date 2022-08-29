@@ -1,4 +1,21 @@
-Docker: Utilização prática no cenário de Microsserviços
-Denilson Bonatti, Instrutor - Digital Innovation One
+- Esse projeto foi baseado no fork do projeto de # denilsonbonatti/toshiro-shibakita
+- Foi feita algumas modificações/melhorias.
+- Foi restrutura as pastas:
 
-Muito se tem falado de containers e consequentemente do Docker no ambiente de desenvolvimento. Mas qual a real função de um container no cenários de microsserviços? Qual a real função e quais exemplos práticos podem ser aplicados no dia a dia? Essas são algumas das questões que serão abordadas de forma prática pelo Expert Instructor Denilson Bonatti nesta Live Coding. IMPORTANTE: Agora nossas Live Codings acontecerão no canal oficial da dio._ no YouTube. Então, já corre lá e ative o lembrete! Pré-requisitos: Conhecimentos básicos em Linux, Docker e AWS.
+- __docker__: contém o arquivo do docker-compose __projeto-final.yml__.
+- __mysql/init__: contém o arquivo de crição da tabala dados.
+- __web-app__: contém o arquivo dockerfile para php.
+
+# Para executar subir aplicação siga os passos abaixo:
+
+1. git clone https://github.com/claudioniz/linux-projeto-final.git
+2. Entre na pasta __linux-projeto-final/docker__ através do comando: __cd linux-projeto-final/docker__
+3. Execute o comando: __docker-compose -f ./projeto-final.yml up -d__
+
+Deverão ser exibidos os container __wep-app__ e __database-mysql__ 
+
+4. Acessar o endereço __http://localhost:8081/__
+
+
+# Resultado esperado: 
+![Resultado esperado](resultado-final.gif)
