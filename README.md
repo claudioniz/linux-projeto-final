@@ -1,6 +1,6 @@
 - Esse projeto foi baseado no fork do projeto de # denilsonbonatti/toshiro-shibakita
 - Foi feita algumas modificações/melhorias.
-- Foi restrutura as pastas:
+- Foi reestruturada as pastas abaixo e utilização de dockerfile e docker-compose:
 
 - __docker__: contém o arquivo do docker-compose __projeto-final.yml__.
 - __mysql/init__: contém o arquivo de crição da tabala dados.
