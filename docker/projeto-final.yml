@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  database-mysql:
+      image: mysql:5.7
+      container_name: database-mysql
+      hostname: database-mysql
+      environment:
+        MYSQL_DATABASE: meubanco
+        MYSQL_USER: meuusuario
+        MYSQL_PASSWORD: 123
+        MYSQL_ROOT_PASSWORD: 123
+      ports:
+        - "3306:3306"
+      volumes:
+        - ../mysql/data:/var/lib/mysql
+        - ../mysql/init:/docker-entrypoint-initdb.d/:ro
+
+  web-app:
+    build:
+      context: ../web-app/
+      dockerfile: Dockerfile
+    container_name: web-app
+    ports:
+    - 8081:80
+    volumes:
+    - ../web-app:/var/www/html/
